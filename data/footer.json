@@ -1,0 +1,22 @@
+{
+  "copyright": "Aarushi Kotwani",
+  "year": "2026",
+  "tagline": "Crafting digital experiences with passion and precision.",
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/aarushikot/",
+      "icon": "github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/aarushikotwani/",
+      "icon": "linkedin"
+    },
+    {
+      "label": "Email",
+      "url": "mailto:aarushi.kotwani.in@gmail.com",
+      "icon": "email"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "heading": "Educational Journey",
+  "subtitle": "Discover how academic excellence shapes innovative thinking and professional growth.",
+  "entries": [
+    {
+      "degree": "Master of Science",
+      "institution": "Seattle University",
+      "field": "Data Science",
+      "startDate": "2023",
+      "endDate": "2025",
+      "gpa": "",
+      "description": "",
+      "achievements": [],
+      "skills": []
+    },
+    {
+      "degree": "Master of Arts",
+      "institution": "Bundelkhand University",
+      "field": "Economics",
+      "startDate": "2020",
+      "endDate": "2022",
+      "gpa": "",
+      "description": "",
+      "achievements": [],
+      "skills": []
+    },
+    {
+      "degree": "Master of Commerce",
+      "institution": "Bundelkhand University",
+      "field": "Commerce",
+      "startDate": "2017",
+      "endDate": "2019",
+      "gpa": "",
+      "description": "",
+      "achievements": [],
+      "skills": []
+    }
+  ],
+  "certifications": []
+}

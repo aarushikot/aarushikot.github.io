@@ -1,0 +1,268 @@
+{
+  "heading": "Featured Projects",
+  "projects": [
+    {
+      "name": "RAG-Based Document Chatbot",
+      "description": "Built a RAG-based chatbot that answers queries strictly from uploaded PDFs by implementing text extraction, chunking, embeddings, and semantic retrieval using LangChain, OpenAI, and ChromaDB, and designed prompt-engineered LLM workflows for precise query handling in a Streamlit UI. Achieved 100% context relevance by testing in-scope vs- out-of-scope queries, optimizing retrieval parameters, and refining prompts to deliver accurate, hallucination-free responses.",
+      "technologies": [
+        "LangChain",
+        "OpenAI",
+        "ChromaDB",
+        "Streamlit",
+        "LLM",
+        "RAG"
+      ],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "color": "#5196fd"
+    },
+    {
+      "name": "Impact of Environmental and Health Factors on Mental Health",
+      "description": "Built Python-based ETL pipeline to ingest and preprocess global health datasets (1990–2019), store cleansed data in a SQL database, then constructed a Bidirectional LSTM model (R² = 0.904) to forecast mental disorder prevalence. Developed interactive Tableau and Excel dashboards to visualize key trends across 100,000+ records, leveraging business intelligence tools to inform strategic recommendations.",
+      "technologies": [
+        "Python",
+        "ETL",
+        "SQL",
+        "LSTM",
+        "Tableau",
+        "Excel"
+      ],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "color": "#8f89ff"
+    },
+    {
+      "name": "Exploring Homeownership Factors",
+      "description": "Analyzed 33K+ housing records using SQL and Python to uncover demographic and economic factors (income, age, debt-to-income ratios, loan terms, and regional price trends) influencing first-time homeownership likelihood and affordability. Optimized SVM models through grid search and cross-validation, achieving 88% accuracy and segmenting households into risk and affordability tiers, providing actionable insights for housing policy design and lender screening strategies.",
+      "technologies": [
+        "SQL",
+        "Python",
+        "SVM"
+      ],
+      "imageUrl": "",
+      "liveUrl": "",
+      "githubUrl": "",
+      "color": "#34d399"
+    },
+    {
+      "name": "mlops-app",
+      "description": "Educational project for mastering software architecture",
+      "technologies": [
+        "HCL",
+        "Python",
+        "Jupyter Notebook",
+        "Dockerfile",
+        "Shell"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/mlops-app",
+      "githubUrl": "https://github.com/aarushikot/mlops-app",
+      "color": "#ed649e"
+    },
+    {
+      "name": "uber-expenses-tracking",
+      "description": "Portfolio project showcasing development capabilities",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python",
+        "HTML"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/uber-expenses-tracking",
+      "githubUrl": "https://github.com/aarushikot/uber-expenses-tracking",
+      "color": "#f97316"
+    },
+    {
+      "name": "real-time-financial-analysis-trading-system",
+      "description": "Educational project for mastering software architecture",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Java",
+        "SCSS",
+        "Python",
+        "Dockerfile"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/real-time-financial-analysis-trading-system",
+      "githubUrl": "https://github.com/aarushikot/real-time-financial-analysis-trading-system",
+      "color": "#facc15"
+    },
+    {
+      "name": "stockastic",
+      "description": "Personal project for exploring modern development practices",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/stockastic",
+      "githubUrl": "https://github.com/aarushikot/stockastic",
+      "color": "#5196fd"
+    },
+    {
+      "name": "time-series-forecasting-python",
+      "description": "Portfolio project showcasing development capabilities",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python",
+        "HTML"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/time-series-forecasting-python",
+      "githubUrl": "https://github.com/aarushikot/time-series-forecasting-python",
+      "color": "#8f89ff"
+    },
+    {
+      "name": "goodreads_etl_pipeline",
+      "description": "Personal development project using industry best practices",
+      "technologies": [
+        "Python"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/goodreads_etl_pipeline",
+      "githubUrl": "https://github.com/aarushikot/goodreads_etl_pipeline",
+      "color": "#34d399"
+    },
+    {
+      "name": "creditcardfrauddetection-mlops",
+      "description": "Portfolio project showcasing development capabilities",
+      "technologies": [
+        "Jupyter Notebook",
+        "Python",
+        "HTML",
+        "CSS",
+        "Dockerfile"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/creditcardfrauddetection-mlops",
+      "githubUrl": "https://github.com/aarushikot/creditcardfrauddetection-mlops",
+      "color": "#ed649e"
+    },
+    {
+      "name": "financial_advisor_llm",
+      "description": "Learning project built with modern web technologies",
+      "technologies": [
+        "Python",
+        "Jupyter Notebook",
+        "Makefile"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/financial_advisor_llm",
+      "githubUrl": "https://github.com/aarushikot/financial_advisor_llm",
+      "color": "#f97316"
+    },
+    {
+      "name": "Resume-Based-AI-Chatbot",
+      "description": "A resume-based AI chatbot built using Retrieval-Augmented Generation (RAG) that answers questions strictly from resume data and avoids hallucinations.",
+      "technologies": [
+        "Python"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Resume-Based-AI-Chatbot",
+      "githubUrl": "https://github.com/aarushikot/Resume-Based-AI-Chatbot",
+      "color": "#facc15"
+    },
+    {
+      "name": "spotify-data-visualization",
+      "description": "**Description:**  Data visualization project analyzing Spotify's Most Streamed Songs Dataset. Explores factors driving song popularity, such as playlists, release dates, and collaborations. Includes insights on streaming metrics, musical attributes, and trends to help artists and marketers. Features comprehensive visualizations and findings.",
+      "technologies": [
+        "HTML"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/spotify-data-visualization",
+      "githubUrl": "https://github.com/aarushikot/spotify-data-visualization",
+      "color": "#5196fd"
+    },
+    {
+      "name": "Predicting-the-Impact-of-Environmental-and-Health-Factors-on-Mental-Health",
+      "description": "This project aims to analyze the influence of environmental and health factors on mental health disorders across 180+ countries over three decades (1990–2019). By leveraging advanced machine learning techniques, the project seeks to uncover key predictors of mental health issues and provide actionable insights for global health strategies.",
+      "technologies": [
+        "HTML"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Predicting-the-Impact-of-Environmental-and-Health-Factors-on-Mental-Health",
+      "githubUrl": "https://github.com/aarushikot/Predicting-the-Impact-of-Environmental-and-Health-Factors-on-Mental-Health",
+      "color": "#8f89ff"
+    },
+    {
+      "name": "Retail-Analytics-Dashboard",
+      "description": "This project aims to develop a comprehensive analytics dashboard for a retail company dealing in groceries. The dashboard provides valuable insights into sales performance, inventory management, and customer behavior, enabling informed decision-making and strategic planning.",
+      "technologies": [
+        "Jupyter Notebook"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Retail-Analytics-Dashboard",
+      "githubUrl": "https://github.com/aarushikot/Retail-Analytics-Dashboard",
+      "color": "#34d399"
+    },
+    {
+      "name": "Housing-Price-Prediction-",
+      "description": "Developed a housing price prediction model using Python, incorporating XGBoost, linear regression, and polynomial features for enhanced accuracy.Utilized Pandas for efficient data manipulation and Matplotlib, Seaborn for insightful data visualization, aiding in the interpretation of model results.",
+      "technologies": [
+        "Python"
+      ],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Housing-Price-Prediction-",
+      "githubUrl": "https://github.com/aarushikot/Housing-Price-Prediction-",
+      "color": "#ed649e"
+    },
+    {
+      "name": "contribution-history",
+      "description": "Generated GitHub contribution history",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/contribution-history",
+      "githubUrl": "https://github.com/aarushikot/contribution-history",
+      "color": "#f97316"
+    },
+    {
+      "name": "financial-insights-in-banking-data-using-powerbi",
+      "description": "Hands-on learning experience with modern frameworks",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/financial-insights-in-banking-data-using-powerbi",
+      "githubUrl": "https://github.com/aarushikot/financial-insights-in-banking-data-using-powerbi",
+      "color": "#facc15"
+    },
+    {
+      "name": "sql-for-financial-data-analysis",
+      "description": "Hands-on learning experience with modern frameworks",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/sql-for-financial-data-analysis",
+      "githubUrl": "https://github.com/aarushikot/sql-for-financial-data-analysis",
+      "color": "#5196fd"
+    },
+    {
+      "name": "Predicting-bird-species-based-on-their-sound-using-Neural-Networks",
+      "description": "This project utilizes neural networks to accurately identify bird species based on their calls, focusing on common species in the Seattle area. This project uses data from Xento-Canto to perform analysis and examine the accuracy of Neural Networks in predicting bird species based on their sound.",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Predicting-bird-species-based-on-their-sound-using-Neural-Networks",
+      "githubUrl": "https://github.com/aarushikot/Predicting-bird-species-based-on-their-sound-using-Neural-Networks",
+      "color": "#8f89ff"
+    },
+    {
+      "name": "Dwelling-occupied-by-owners-or-renters",
+      "description": "The dataset used in analysis contains a wide range of variables related to both individuals and housing units. Variables include demographic information such as age, income, and details about their homes, including construction dates and utility costs. By using support vector machines, the aim is to identify which factors are most significance.",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Dwelling-occupied-by-owners-or-renters",
+      "githubUrl": "https://github.com/aarushikot/Dwelling-occupied-by-owners-or-renters",
+      "color": "#34d399"
+    },
+    {
+      "name": "Exploratory-Analysis-of-Departure-Delays-for-United-Airlines-",
+      "description": "This project explores departure delays at United Airlines (UA) through EDA and permutation tests, assessing relationships with time of day, year, temperature, wind speed, precipitation, and visibility.",
+      "technologies": [],
+      "imageUrl": "",
+      "liveUrl": "https://github.com/aarushikot/Exploratory-Analysis-of-Departure-Delays-for-United-Airlines-",
+      "githubUrl": "https://github.com/aarushikot/Exploratory-Analysis-of-Departure-Delays-for-United-Airlines-",
+      "color": "#ed649e"
+    }
+  ]
+}

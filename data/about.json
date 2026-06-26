@@ -1,0 +1,24 @@
+{
+  "heading": "About Me",
+  "roles": "Data Professional, Research Assistant, Graduate Engineer, Data Scientist (Capstone)",
+  "bio": [
+    "Data Professional with over two years of experience in data engineering, analytics, and dashboarding for finance and AI/ML projects. Proficient in SQL, Excel, and Tableau; automated ETL pipelines and built interactive dashboards that uncovered $80K+ in cost savings and boosted data processing efficiency by 35%.",
+    "Skilled at collaborating with stakeholders to translate analytical insights into actionable recommendations and drive improved customer and business outcomes."
+  ],
+  "quote": "I'm a lifelong learner and innovator, driven by a desire to contribute with new ideas and tools that deliver real value.",
+  "highlights": [
+    {
+      "label": "Years Experience",
+      "value": "1+"
+    },
+    {
+      "label": "Projects Completed",
+      "value": "3+"
+    },
+    {
+      "label": "Technologies",
+      "value": "55+"
+    }
+  ],
+  "avatarUrl": ""
+}
