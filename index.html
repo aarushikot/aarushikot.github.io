@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <noscript>
+    <style>
+      .reveal-up,.reveal-left,.reveal-right,.reveal-scale,.stagger-children > *{opacity:1;transform:none}
+    </style>
+  </noscript>
 </head>
 <body>
 
@@ -42,7 +47,7 @@
 
           <div class="hero-badge">
             <div class="hero-badge-dot"></div>
-            <span class="hero-badge-text">Welcome to my universe</span>
+            <span class="hero-badge-text">Open to data roles</span>
           </div>
 
           <h1 class="hero-name">
@@ -67,10 +72,6 @@
             <a href="#contact" class="btn btn--secondary">
               <span class="btn-inner"><span>Get Resume</span></span>
             </a>
-          </div>
-
-          <div class="hero-floating-badges">
-            <!-- Populated by JS -->
           </div>
         </div>
 
@@ -100,18 +101,25 @@
   <!-- ============ ABOUT SECTION ============ -->
   <section class="about section" id="about">
     <div class="container">
-      <div class="about-grid reveal-up">
-        <div>
-          <h2 class="about-roles"></h2>
-          <div class="about-image-wrapper">
-            <!-- Populated by JS -->
+      <div class="about-layout">
+        <div class="about-portrait reveal-left">
+          <div class="about-portrait-frame">
+            <!-- Portrait img populated by JS -->
+          </div>
+          <div class="about-portrait-chip">
+            <span class="about-portrait-chip-dot"></span>
+            <span class="about-portrait-chip-text">Open to opportunities</span>
           </div>
         </div>
-        <div>
+        <div class="about-content reveal-right">
+          <span class="about-eyebrow">About me</span>
+          <h2 class="about-lead">
+            <!-- Populated by JS -->
+          </h2>
           <div class="about-text">
             <!-- Populated by JS -->
           </div>
-          <div class="about-highlights">
+          <div class="about-stats">
             <!-- Populated by JS -->
           </div>
         </div>
@@ -126,13 +134,6 @@
       <h2 class="section-title reveal-up">Skills & Technologies</h2>
       <div class="skills-grid stagger-children">
         <!-- Populated by JS -->
-      </div>
-      <div class="icon-cloud-section reveal-up">
-        <div class="icon-cloud-container" id="iconCloud">
-          <div class="icon-cloud-sphere" id="iconCloudSphere">
-            <!-- Populated by JS -->
-          </div>
-        </div>
       </div>
     </div>
   </section>

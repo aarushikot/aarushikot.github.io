@@ -1,6 +1,6 @@
 {
   "heading": "Professional Journey",
-  "subtitle": "Transforming ideas into digital reality, one project at a time",
+  "subtitle": "Roles where I turned messy data into decisions across research, analytics, and machine learning.",
   "positions": [
     {
       "title": "Research Assistant",
@@ -8,7 +8,7 @@
       "location": "",
       "startDate": "2025",
       "endDate": "Present",
-      "description": "Developed a data analysis image analysis pipeline that processed over 91 biological samples using Python (scikit-learn, NumPy, Pandas) and extracted 144-dimensional features from color histograms, texture (LBP), and edges, which streamlined the workflow and enabled rapid identification of sample differences. Applied unsupervised machine learning techniques including K-means clustering, PCA, and t-SNE visualization, achieving 0.38 silhouette score and identifying distinct visual patterns across sample categories. Conducted statistical correlation analysis distinguishing technical artifacts from biological variation, determining that 80% of observed differences stemmed from imaging conditions rather than morphological factors.",
+      "description": "Building Python image-analysis and unsupervised ML pipelines to cluster biological samples and separate technical imaging artifacts from real biological variation.",
       "achievements": [
         "Developed a data analysis image analysis pipeline that processed over 91 biological samples using Python (scikit-learn, NumPy, Pandas) and extracted 144-dimensional features from color histograms, texture (LBP), and edges, which streamlined the workflow and enabled rapid identification of sample differences.",
         "Applied unsupervised machine learning techniques including K-means clustering, PCA, and t-SNE visualization, achieving 0.38 silhouette score and identifying distinct visual patterns across sample categories.",
@@ -22,7 +22,8 @@
         "K-means clustering",
         "PCA",
         "t-SNE"
-      ]
+      ],
+      "logo": "assets/logos/seattleu.png"
     },
     {
       "title": "Graduate Engineer",
@@ -30,7 +31,7 @@
       "location": "",
       "startDate": "2026",
       "endDate": "2026",
-      "description": "Captured and validated high-fidelity multimodal datasets for AI/ML training, organized data-quality metrics in Excel, and maintained 98% accuracy across high-volume workflows. Performed data-integrity checks and resolved anomalies on structured datasets using SQL queries, database tools, and Excel-based validation, delivering clean, consistent, ML-ready ground-truth outputs for Meta’s AR/VR computer-vision systems. Supported pipelines by automating ETL uploads and validation logging with Python scripts, documenting collection sessions, and generating data visualization reports that provided audit-ready datasets for ML development.",
+      "description": "Captured and validated multimodal datasets for AR/VR computer-vision ML training, keeping ground-truth data clean, accurate, and audit-ready.",
       "achievements": [
         "Captured and validated high-fidelity multimodal datasets for AI/ML training, organized data-quality metrics in Excel, and maintained 98% accuracy across high-volume workflows.",
         "Performed data-integrity checks and resolved anomalies on structured datasets using SQL queries, database tools, and Excel-based validation, delivering clean, consistent, ML-ready ground-truth outputs for Meta’s AR/VR computer-vision systems.",
@@ -41,7 +42,8 @@
         "SQL",
         "Python",
         "ETL"
-      ]
+      ],
+      "logo": "assets/logos/qualitest.png"
     },
     {
       "title": "Data Scientist (Capstone)",
@@ -49,7 +51,7 @@
       "location": "",
       "startDate": "2025",
       "endDate": "2025",
-      "description": "Built an end-to-end AWS and Python analytics pipeline to automate ingestion, validation, and forecasting across 500+ organizations’ sustainability datasets using Excel and ETL processes, improving data processing efficiency by 35% and reducing manual effort. Developed regression and time-series models and applied data visualization techniques to identify key sustainability performance drivers, enabling stakeholders to prioritize high-impact initiatives and supporting data-driven decision-making at scale. Designed Tableau dashboards that tracked KPIs and performance trends using SQL to extract and transform data, worked with cross-functional teams to verify data accuracy, and set up structured data-collection workflows and quality-control checks; this cut reporting time, letting stakeholders receive insights faster and improve decisions.",
+      "description": "Built an AWS and Python analytics pipeline for sustainability datasets, with forecasting models and Tableau dashboards to guide stakeholder decisions.",
       "achievements": [
         "Built an end-to-end AWS and Python analytics pipeline to automate ingestion, validation, and forecasting across 500+ organizations’ sustainability datasets using Excel and ETL processes, improving data processing efficiency by 35% and reducing manual effort.",
         "Developed regression and time-series models and applied data visualization techniques to identify key sustainability performance drivers, enabling stakeholders to prioritize high-impact initiatives and supporting data-driven decision-making at scale.",
@@ -62,7 +64,8 @@
         "ETL",
         "Tableau",
         "SQL"
-      ]
+      ],
+      "logo": "assets/logos/amazon.png"
     },
     {
       "title": "Data Analyst Intern",
@@ -70,7 +73,7 @@
       "location": "",
       "startDate": "2024",
       "endDate": "2025",
-      "description": "Analyzed multi-year financial spend data using SQL, Python, and Excel, using ETL processes to uncover $80K+ in cost-saving opportunities and developing regression-based forecasting models that improved annual budget planning accuracy by 15%. Built automated dashboards using Tableau and maintained bill of materials integrations for tracking budget KPIs, variance trends, and forecasting metrics, reducing manual reporting workload by 15% and improving real-time visibility for finance leadership. Partnered with finance leadership to translate analytical findings into actionable allocation strategies, validating assumptions through statistical testing and delivering data-driven strategic insights that supported informed budget decision-making.",
+      "description": "Analyzed financial spend data with SQL, Python, and Tableau to surface cost savings and improve budget forecasting for finance leadership.",
       "achievements": [
         "Analyzed multi-year financial spend data using SQL, Python, and Excel, using ETL processes to uncover $80K+ in cost-saving opportunities and developing regression-based forecasting models that improved annual budget planning accuracy by 15%.",
         "Built automated dashboards using Tableau and maintained bill of materials integrations for tracking budget KPIs, variance trends, and forecasting metrics, reducing manual reporting workload by 15% and improving real-time visibility for finance leadership.",
@@ -82,7 +85,8 @@
         "Excel",
         "ETL",
         "Tableau"
-      ]
+      ],
+      "logo": "assets/logos/seattleu.png"
     }
   ]
 }

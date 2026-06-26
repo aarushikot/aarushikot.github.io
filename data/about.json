@@ -1,24 +1,27 @@
 {
   "heading": "About Me",
-  "roles": "Data Professional, Research Assistant, Graduate Engineer, Data Scientist (Capstone)",
+  "eyebrow": "About me",
+  "roles": "Data Analyst & Data Scientist",
+  "lead": "I turn messy data into <span class=\"accent\">decisions people can act on.</span>",
   "bio": [
-    "Data Professional with over two years of experience in data engineering, analytics, and dashboarding for finance and AI/ML projects. Proficient in SQL, Excel, and Tableau; automated ETL pipelines and built interactive dashboards that uncovered $80K+ in cost savings and boosted data processing efficiency by 35%.",
-    "Skilled at collaborating with stakeholders to translate analytical insights into actionable recommendations and drive improved customer and business outcomes."
+    "I spent the past two-plus years working across data engineering, analytics, and dashboarding on finance and AI/ML projects. Day to day, that meant writing SQL, modeling data in Excel, and building Tableau views people actually used. By automating ETL pipelines and putting interactive dashboards in front of decision-makers, I helped surface more than $80K in cost savings and cut data processing time by roughly 35%.",
+    "What I enjoy most is the part where analysis turns into a decision. I work closely with stakeholders to understand what they're trying to figure out, then translate the numbers into clear recommendations that move customer and business outcomes in the right direction."
   ],
   "quote": "I'm a lifelong learner and innovator, driven by a desire to contribute with new ideas and tools that deliver real value.",
+  "availability": "Open to opportunities",
   "highlights": [
     {
-      "label": "Years Experience",
-      "value": "1+"
+      "label": "Years experience",
+      "value": "2+"
     },
     {
-      "label": "Projects Completed",
-      "value": "3+"
+      "label": "Featured projects",
+      "value": "6"
     },
     {
       "label": "Technologies",
-      "value": "55+"
+      "value": "25+"
     }
   ],
-  "avatarUrl": ""
+  "avatarUrl": "assets/img/aarushi.jpg"
 }

@@ -6,33 +6,19 @@
     "Research Assistant",
     "Graduate Engineer"
   ],
-  "tagline": "Data Professional with over two years of experience in data engineering, analytics, and dashboarding for finance and AI/ML projects. Proficient in SQL, Excel, and Tableau; automated ETL pipelines and built interactive dashboards that uncovered $80K+ in cost savings and boosted data processing efficiency by 35%. Skilled at collaborating with stakeholders to translate analytical insights into actionable recommendations and drive improved customer and business outcomes.",
+  "tagline": "I turn messy data into decisions. Two-plus years building ETL pipelines and dashboards across finance and AI/ML — work that surfaced $80K+ in savings and cut processing time 35%. SQL, Tableau, and a knack for asking the right questions.",
   "ctaPrimary": {
     "text": "View Projects",
     "href": "#projects"
   },
   "ctaSecondary": {
-    "text": "Get Resume",
+    "text": "Get in Touch",
     "href": "#contact"
   },
   "codeSnippet": {
     "filename": "developer.js",
-    "code": "const profile = {\n    name: 'Aarushi Kotwani',\n    title: 'Data Professional',\n    skills: [\n        'Python', 'R', 'SQL', 'Pandas', 'NumPy', 'Scikit-learn', 'TensorFlow', 'Keras', 'Pillow'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 1,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
+    "code": "const profile = {\n    name: 'Aarushi Kotwani',\n    title: 'Data Professional',\n    skills: [\n        'Python', 'SQL', 'Pandas', 'Scikit-learn', 'Tableau', 'TensorFlow'\n    ],\n    hardWorker: true,\n    quickLearner: true,\n    problemSolver: true,\n    yearsOfExperience: 2,\n    hireable: function() {\n        return (\n            this.hardWorker &&\n            this.problemSolver &&\n            this.skills.length >= 5\n        );\n    }\n};"
   },
-  "floatingBadges": [
-    {
-      "text": "UI Magic",
-      "color": "purple"
-    },
-    {
-      "text": "Clean Code",
-      "color": "blue"
-    },
-    {
-      "text": "Innovation",
-      "color": "amber"
-    }
-  ],
   "socialLinks": {
     "github": "https://github.com/aarushikot/",
     "linkedin": "https://www.linkedin.com/in/aarushikotwani/",

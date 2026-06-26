@@ -162,55 +162,6 @@
     setInterval(() => { if (document.visibilityState === 'visible') addSparkle(); }, 300);
   }
 
-  // ---- 3D Icon Cloud ---- //
-  function createIconCloud(containerId) {
-    const sphere = document.getElementById('iconCloudSphere');
-    if (!sphere) return;
-
-    const techNames = [
-      'JS', 'TS', 'React', 'Vue', 'Node', 'Python', 'Go', 'Rust',
-      'HTML', 'CSS', 'Docker', 'AWS', 'Git', 'Linux', 'SQL', 'Redis',
-      'Next.js', 'Express', 'Figma', 'Vercel', 'Firebase', 'GraphQL',
-      'Jest', 'Vite', 'Tailwind', 'Svelte', 'MongoDB', 'K8s'
-    ];
-
-    const count = techNames.length;
-    const radius = 160;
-
-    techNames.forEach((name, i) => {
-      // Fibonacci sphere distribution
-      const phi = Math.acos(1 - 2 * (i + 0.5) / count);
-      const theta = Math.PI * (1 + Math.sqrt(5)) * i;
-
-      const x = radius * Math.sin(phi) * Math.cos(theta);
-      const y = radius * Math.sin(phi) * Math.sin(theta);
-      const z = radius * Math.cos(phi);
-
-      const item = document.createElement('div');
-      item.className = 'icon-cloud-item';
-      item.textContent = name;
-      item.style.transform = `translate3d(${x}px, ${y}px, ${z}px)`;
-      sphere.appendChild(item);
-    });
-
-    // Mouse interaction
-    const container = document.getElementById(containerId);
-    if (container) {
-      container.addEventListener('mousemove', (e) => {
-        const rect = container.getBoundingClientRect();
-        const mx = (e.clientX - rect.left - rect.width / 2) / rect.width;
-        const my = (e.clientY - rect.top - rect.height / 2) / rect.height;
-        sphere.style.animationPlayState = 'paused';
-        sphere.style.transform = `rotateY(${mx * 40}deg) rotateX(${-my * 40}deg)`;
-      });
-
-      container.addEventListener('mouseleave', () => {
-        sphere.style.animationPlayState = '';
-        sphere.style.transform = '';
-      });
-    }
-  }
-
   // ---- Stacking Project Cards (scroll-linked) ---- //
   function initStackingCards() {
     const cards = document.querySelectorAll('.project-card');
@@ -306,8 +257,8 @@
     // Meteors
     createMeteors(section.querySelector('.hero-meteors'), 8);
 
-    // Welcome badge text
-    section.querySelector('.hero-badge-text').textContent = 'Welcome to my universe';
+    // Availability badge text
+    section.querySelector('.hero-badge-text').textContent = 'Open to data roles';
 
     // Heading with SparklesText on greeting
     const heading = section.querySelector('.hero-name');
@@ -337,18 +288,6 @@
       ctaSecondary.querySelector('.btn-inner').innerHTML = `<span>${data.ctaSecondary.text || 'Get Resume'}</span>${icon('envelope', 'btn-icon-mail')}`;
     }
 
-    // Floating badges
-    const badgeContainer = section.querySelector('.hero-floating-badges');
-    const badgeIcons = { purple: 'wand', blue: 'code', amber: 'lightbulb' };
-    if (data.floatingBadges) {
-      data.floatingBadges.forEach(b => {
-        const div = document.createElement('div');
-        div.className = `floating-badge floating-badge--${b.color}`;
-        div.innerHTML = `${icon(badgeIcons[b.color] || 'code')} ${b.text}`;
-        badgeContainer.appendChild(div);
-      });
-    }
-
     // Code window
     if (data.codeSnippet) {
       section.querySelector('.code-window-filename').innerHTML = `${icon('codeFile')} ${data.codeSnippet.filename || 'developer.js'}`;
@@ -360,17 +299,31 @@
     if (!data) return;
     const section = document.getElementById('about');
 
-    section.querySelector('.about-roles').textContent = data.roles || 'About Me';
-
-    // Image or placeholder
-    const imgWrapper = section.querySelector('.about-image-wrapper');
-    if (data.avatarUrl) {
-      imgWrapper.innerHTML = `<img src="${data.avatarUrl}" alt="Profile photo">`;
-    } else {
-      imgWrapper.innerHTML = '<div class="about-image-placeholder">&lt;/&gt;</div>';
+    // Eyebrow + availability chip text (optional overrides)
+    if (data.eyebrow) {
+      const eyebrow = section.querySelector('.about-eyebrow');
+      if (eyebrow) eyebrow.textContent = data.eyebrow;
+    }
+    if (data.availability) {
+      const chipText = section.querySelector('.about-portrait-chip-text');
+      if (chipText) chipText.textContent = data.availability;
     }
 
-    // Bio
+    // Lead statement (falls back to roles)
+    const lead = section.querySelector('.about-lead');
+    if (lead) lead.innerHTML = data.lead || data.roles || 'About Me';
+
+    // Portrait (image or initials placeholder)
+    const frame = section.querySelector('.about-portrait-frame');
+    if (frame) {
+      if (data.avatarUrl) {
+        frame.innerHTML = `<img src="${data.avatarUrl}" alt="Portrait of Aarushi Kotwani" loading="lazy">`;
+      } else {
+        frame.innerHTML = '<div class="about-image-placeholder">AK</div>';
+      }
+    }
+
+    // Bio + quote
     const textContainer = section.querySelector('.about-text');
     let bioHtml = '';
     if (Array.isArray(data.bio)) {
@@ -378,22 +331,17 @@
     } else if (data.bio) {
       bioHtml = `<p>${data.bio}</p>`;
     }
-
     if (data.quote) {
       bioHtml += `<div class="about-quote"><p>${data.quote}</p></div>`;
     }
+    if (textContainer) textContainer.innerHTML = bioHtml;
 
-    textContainer.innerHTML = bioHtml;
-
-    // Highlights
-    const highlightsContainer = section.querySelector('.about-highlights');
-    if (data.highlights) {
-      data.highlights.forEach(h => {
-        const div = document.createElement('div');
-        div.className = 'about-stat';
-        div.innerHTML = `<span class="about-stat-value">${h.value}</span><span class="about-stat-label">${h.label}</span>`;
-        highlightsContainer.appendChild(div);
-      });
+    // Inline stats strip
+    const statsContainer = section.querySelector('.about-stats');
+    if (statsContainer && data.highlights) {
+      statsContainer.innerHTML = data.highlights.map(h =>
+        `<div class="about-stat"><span class="about-stat-value">${h.value}</span><span class="about-stat-label">${h.label}</span></div>`
+      ).join('');
     }
   }
 
@@ -418,18 +366,9 @@
 
       let skillsHtml = '';
       (cat.skills || []).forEach(skill => {
-        const level = typeof skill === 'object' ? skill.level : 80;
-        const name = typeof skill === 'object' ? skill.name : skill;
-        skillsHtml += `
-          <div class="skill-item">
-            <div class="skill-item-header">
-              <span class="skill-item-name">${name}</span>
-              <span class="skill-item-level">${level}%</span>
-            </div>
-            <div class="skill-item-bar">
-              <div class="skill-item-fill" style="--bar-color: ${color}; --bar-color-end: ${color}88; --fill-width: ${level}%;" data-level="${level}"></div>
-            </div>
-          </div>`;
+        const name = (skill && typeof skill === 'object') ? skill.name : skill;
+        if (!name) return;
+        skillsHtml += `<span class="skill-tag">${name}</span>`;
       });
 
       card.innerHTML = `
@@ -470,12 +409,14 @@
         <div class="exp-card-inner">
           <div class="exp-card-icon">
             <div class="exp-card-icon-glow"></div>
-            ${icon(expIcons[idx % expIcons.length])}
+            ${pos.logo
+              ? `<span class="exp-card-logo"><img src="${pos.logo}" alt="${pos.company} logo" loading="lazy"></span>`
+              : icon(expIcons[idx % expIcons.length])}
           </div>
           <div class="exp-card-title">${pos.title}</div>
           <div class="exp-card-meta">
             <span class="exp-card-company">${pos.company}</span>
-            <span class="exp-card-period">${pos.startDate}${pos.endDate ? ' - ' + pos.endDate : ''}</span>
+            <span class="exp-card-period">${(!pos.endDate || pos.endDate === pos.startDate) ? pos.startDate : pos.startDate + ' – ' + pos.endDate}</span>
           </div>
           <p class="exp-card-description">${pos.description}</p>
           ${achieveHtml}
@@ -621,7 +562,9 @@
     // Contact info items
     const infoContainer = section.querySelector('.contact-details');
 
-    if (data.email) {
+    const hasValue = (v) => typeof v === 'string' ? v.trim() !== '' : !!v;
+
+    if (hasValue(data.email)) {
       const item = document.createElement('div');
       item.className = 'contact-detail';
       item.innerHTML = `
@@ -630,7 +573,7 @@
       infoContainer.appendChild(item);
     }
 
-    if (data.location) {
+    if (hasValue(data.location)) {
       const item = document.createElement('div');
       item.className = 'contact-detail';
       item.innerHTML = `
@@ -639,7 +582,7 @@
       infoContainer.appendChild(item);
     }
 
-    if (data.phone) {
+    if (hasValue(data.phone)) {
       const item = document.createElement('div');
       item.className = 'contact-detail';
       item.innerHTML = `
@@ -760,20 +703,32 @@
   // ---- Scroll animations (IntersectionObserver) ---- //
   function initRevealAnimations() {
     const revealClasses = ['.reveal-up', '.reveal-left', '.reveal-right', '.reveal-scale'];
-    const staggerElements = document.querySelectorAll('.stagger-children');
     const elements = document.querySelectorAll(revealClasses.join(','));
+    const staggerElements = document.querySelectorAll('.stagger-children');
+    const allElements = [...elements, ...staggerElements];
+
+    const inViewport = (el) => {
+      const rect = el.getBoundingClientRect();
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      const vw = window.innerWidth || document.documentElement.clientWidth;
+      return rect.bottom > 0 && rect.right > 0 && rect.top < vh && rect.left < vw;
+    };
+
+    const revealPass = () => {
+      allElements.forEach(el => {
+        if (inViewport(el)) el.classList.add('revealed');
+      });
+    };
+
+    // Reveal the hero content immediately (don't wait for the observer)
+    document.querySelectorAll('#hero .reveal-up, #hero .reveal-left, #hero .reveal-right, #hero .reveal-scale, #hero .stagger-children')
+      .forEach(el => el.classList.add('revealed'));
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('revealed');
-
-            // Animate skill bars
-            const bars = entry.target.querySelectorAll('.skill-item-fill');
-            bars.forEach(bar => {
-              bar.classList.add('animated');
-            });
           }
         });
       },
@@ -782,6 +737,17 @@
 
     elements.forEach(el => observer.observe(el));
     staggerElements.forEach(el => observer.observe(el));
+
+    // Immediately reveal anything already intersecting the viewport
+    revealPass();
+
+    // Safety net: ensure nothing stays stuck invisible
+    setTimeout(() => {
+      allElements.forEach(el => el.classList.add('revealed'));
+    }, 1500);
+
+    // Re-run a reveal pass on anchor jumps
+    window.addEventListener('hashchange', revealPass);
   }
 
   // ---- Header scroll behavior ---- //
@@ -828,9 +794,6 @@
 
     initHeaderScroll();
     initScrollSpy();
-
-    // 3D Icon Cloud
-    createIconCloud('iconCloud');
 
     // Stacking project cards
     initStackingCards();
