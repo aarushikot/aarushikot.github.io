@@ -524,10 +524,15 @@
 
       const dateStr = [edu.startDate, edu.endDate].filter(Boolean).join(' - ');
 
+      // Show "Degree in Field" unless the degree already ends with the field (e.g. "Master of Commerce" + "Commerce")
+      const degreeText = (edu.field && !edu.degree.toLowerCase().trim().endsWith(edu.field.toLowerCase().trim()))
+        ? `${edu.degree} in ${edu.field}`
+        : edu.degree;
+
       card.innerHTML = `
         <div class="edu-card-header">
           <span class="edu-card-emoji">${mascots[idx % mascots.length]}</span>
-          <h3 class="edu-card-degree">${edu.degree}</h3>
+          <h3 class="edu-card-degree">${degreeText}</h3>
         </div>
         <div class="edu-card-institution">${icon('bookOpen', 'edu-card-institution-icon')} ${edu.institution}</div>
         ${dateStr ? `<div class="edu-card-dates">${icon('calendar')} ${dateStr}</div>` : ''}
