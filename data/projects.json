@@ -2,86 +2,49 @@
   "heading": "Featured Projects",
   "projects": [
     {
-      "name": "RAG-Based Document Chatbot",
-      "description": "Built a RAG-based chatbot that answers queries strictly from uploaded PDFs by implementing text extraction, chunking, embeddings, and semantic retrieval using LangChain, OpenAI, and ChromaDB, and designed prompt-engineered LLM workflows for precise query handling in a Streamlit UI. Achieved 100% context relevance by testing in-scope vs- out-of-scope queries, optimizing retrieval parameters, and refining prompts to deliver accurate, hallucination-free responses.",
+      "name": "GenAI Data Assistant (RAG)",
+      "description": "A RAG chatbot for natural-language queries over structured datasets — chunking, embeddings, and ChromaDB semantic retrieval, with grounding and hallucination checks (in-scope vs. out-of-scope) for source-backed answers. Deployed as a Streamlit app so non-technical users can query data without writing code.",
       "technologies": [
+        "Python",
         "LangChain",
         "OpenAI",
         "ChromaDB",
         "Streamlit",
-        "LLM",
         "RAG"
       ],
-      "imageUrl": "assets/img/projects/rag-chatbot.jpg",
+      "imageUrl": "assets/img/projects/genai-data-assistant.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/RAG-Based-Document-Chatbot",
+      "githubUrl": "https://github.com/aarushikot/genai-data-assistant",
       "color": "#5196fd"
     },
     {
-      "name": "Impact of Environmental and Health Factors on Mental Health",
-      "description": "Built Python-based ETL pipeline to ingest and preprocess global health datasets (1990–2019), store cleansed data in a SQL database, then constructed a Bidirectional LSTM model (R² = 0.904) to forecast mental disorder prevalence. Developed interactive Tableau and Excel dashboards to visualize key trends across 100,000+ records, leveraging business intelligence tools to inform strategic recommendations.",
+      "name": "Sales & Revenue Trend Analysis",
+      "description": "A Python ETL pipeline that ingests, cleans, and standardizes retail sales across 3 product categories into SQL, then forecasts monthly revenue and seasonal patterns with Facebook Prophet. Results feed a drill-through Power BI report by category, region, and time period for non-technical stakeholders.",
       "technologies": [
         "Python",
-        "ETL",
         "SQL",
-        "LSTM",
-        "Tableau",
-        "Excel"
+        "Prophet",
+        "Power BI",
+        "ETL"
       ],
-      "imageUrl": "assets/img/projects/mental-health.jpg",
+      "imageUrl": "assets/img/projects/sales-revenue-forecasting.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/Predicting-the-Impact-of-Environmental-and-Health-Factors-on-Mental-Health",
-      "color": "#8f89ff"
-    },
-    {
-      "name": "Exploring Homeownership Factors",
-      "description": "Analyzed 33K+ housing records using SQL and Python to uncover demographic and economic factors (income, age, debt-to-income ratios, loan terms, and regional price trends) influencing first-time homeownership likelihood and affordability. Optimized SVM models through grid search and cross-validation, achieving 88% accuracy and segmenting households into risk and affordability tiers, providing actionable insights for housing policy design and lender screening strategies.",
-      "technologies": [
-        "SQL",
-        "Python",
-        "SVM"
-      ],
-      "imageUrl": "assets/img/projects/homeownership.jpg",
-      "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/Dwelling-occupied-by-owners-or-renters",
-      "color": "#34d399"
-    },
-    {
-      "name": "Resume-Based-AI-Chatbot",
-      "description": "A resume-based AI chatbot built using Retrieval-Augmented Generation (RAG) that answers questions strictly from resume data and avoids hallucinations.",
-      "technologies": [
-        "Python",
-        "RAG",
-        "LLM"
-      ],
-      "imageUrl": "assets/img/projects/resume-chatbot.jpg",
-      "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/Resume-Based-AI-Chatbot",
-      "color": "#ed649e"
-    },
-    {
-      "name": "Retail Analytics Dashboard",
-      "description": "An analytics dashboard for a grocery retailer that surfaces insights into sales performance, inventory management, and customer behavior to support data-driven decision-making.",
-      "technologies": [
-        "Jupyter Notebook",
-        "Python"
-      ],
-      "imageUrl": "assets/img/projects/retail-analytics.jpg",
-      "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/Retail-Analytics-Dashboard",
+      "githubUrl": "https://github.com/aarushikot/sales-revenue-forecasting",
       "color": "#f97316"
     },
     {
-      "name": "Spotify Data Visualization",
-      "description": "Data visualization project on Spotify's Most Streamed Songs dataset, exploring how playlists, release dates, collaborations, and musical attributes drive song popularity through streaming-trend visualizations.",
+      "name": "Customer Churn Prediction Dashboard",
+      "description": "Extracted and cleaned a 7,000-row telecom dataset with Python and SQL, ran EDA to surface churn drivers, and trained a logistic-regression model (~80% accuracy, 0.85 ROC-AUC). A Tableau dashboard visualizes churn risk by demographics, contract type, and tenure — turning model output into an actionable tool for business teams.",
       "technologies": [
         "Python",
-        "Data Visualization"
+        "SQL",
+        "Logistic Regression",
+        "Tableau"
       ],
-      "imageUrl": "assets/img/projects/spotify-viz.jpg",
+      "imageUrl": "assets/img/projects/customer-churn-prediction.jpg",
       "liveUrl": "",
-      "githubUrl": "https://github.com/aarushikot/spotify-data-visualization",
-      "color": "#facc15"
+      "githubUrl": "https://github.com/aarushikot/customer-churn-prediction",
+      "color": "#34d399"
     }
   ]
 }
